@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WALK IT</title>
+
+<link rel="stylesheet" href="website.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="images/WALKIT.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+        <header>
+            <nav>
+                <div class="logo">PIXEL POST</div>
+                <a href="WALKIT TEST/WALKIT.html"><button class="play-btn">PLAY FOR FREE</button></a>
+            </nav>
+        </header>
+    
+
+    <section class="hero">
+<!-- floating pixel particles -->
+        <div class="stars"></div>
+            <div class="content">
+                <h1>WALK IT</h1>
+
+                <p>
+                Travel back in time with WALK IT, a 2D pixel adventure where you meet
+                the minds behind modern technology. Walk through the moments
+                that changed the world.
+                </p>
+
+            <div class="buttons">
+                <a href="#gallery"><button>DEVELOPER</button></a> 
+                <a href="#footer"><button>CONTACTS</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="carousel-wrap">
+
+        <h2 class="gallery-title">TEAM GALLERY</h2>
+
+        <div class="carousel">
+            <div class="track" id="track">
+
+            <div class="slide">
+                <img src="images/Larell.png" alt="Team 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/Joseph.jpg" alt="Team 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/Jomarie.png" alt="Team 3">
+            </div>
+	
+            <div class="slide">
+                <img src="images/Cyron.jpg" alt="Team 4">
+            </div>
+
+            </div>
+        </div>
+    
+        <div class="dots" id="dots"></div>
+    
+        <div class="gallery-buttons">
+            <button class="gallery-btn" onclick="moveSlide(-1)">⟨ Prev</button>
+            <button class="gallery-btn" onclick="moveSlide(1)">Next ⟩</button>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <h2>Send Feedback</h2>
+        
+            <form id="feedback-form" action="https://formsubmit.co/joseph.dahunan@olivarezcollege.edu.ph" method="POST">
+            
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Redirect after submit -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+            <input type="email" name="email" placeholder="Your Email" required>
+            
+            <textarea name="message" rows="4" placeholder="Your Feedback..." required></textarea>
+            
+            <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+
+    
+<script src="website.js"></script>
+</body>
+</html>
